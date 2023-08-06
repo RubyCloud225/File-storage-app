@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+h1 {
+    color: #323330;
+    font-family: palatino, serif;
+}
+
+h2 {
+    color: #323330;
+    font-family: palatino, serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.drop-targets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 20px 0;
+}
+
+.box {
+    height: 650px;
+    width: 850px;
+    border: solid 2px #ccc;
+    margin: 10px;
+
+    /* align items in the box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+}
+
+.drag-over {
+    border: dashed 3px red;
+}
+.hide {
+    display: none;
+}
